@@ -1,13 +1,13 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php");
+	require_once(__DIR__ . "/../model/database.php");	//creates connection to the server
 
-	$connection = new mysqli($host, $username, $password); 
+	$connection = new mysqli($host, $username, $password);	//the object we use to connect to the server
 
-	if($connection->connect_error){
-		die("error:" . $connection->connect_error);
+	if($connection->connect_error){			//accessing a property called 'connect_error', checking for a connection error
+		die("error:" . $connection->connect_error);		//if there's an error it will kill the program & tell the user what the error was
 	}
 	
-	$exists = $connection->select_db($database);
+	$exists = $connection->select_db($database); //select_db tries to connect to the MYSQL server
 
 	if(!$exists) {
 		$query = $connection->query("CREATE DATABASE $database");
