@@ -9,16 +9,16 @@
 	
 	$exists = $connection->select_db($database); //select_db tries to connect to the MYSQL server
 
-	if(!$exists) {
-		$query = $connection->query("CREATE DATABASE $database");
-
+	if(!$exists) {			//checks to see if the database does not exist
+		$query = $connection->query("CREATE DATABASE $database");		//if the databse does not exist it will issue a query
+																		//creating a databases
 		if($query) {
 			echo "successfully created database " . $database;
 		}
 
 	}
 	else {
-		echo "Database has already been created.";
+		echo "Database has already been created.";		//if the database was created already it echos this out.
 	}
 
 	$query = $connection->query("CREATE TABLE posts (" //creates a table called post with an id
