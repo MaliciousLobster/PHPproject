@@ -18,17 +18,18 @@
 
 	}
 	else {
-		echo "Database has already been created.";		//if the database was created already it echos this out.
+		echo "Database has already been created.";	//if the database was created already it echos this out.
 	}
 
 	$query = $connection->query("CREATE TABLE posts (" //creates a table called post with an id
 		. "id int(11) NOT NULL AUTO_INCREMENT,"        //and a title with up to 255 characters
 		. "title varchar(255) NOT NULL,"               //non of them can be null.
 		. "post text NOT NULL"
-		. "PRIMARY KEY (id)");
+		. "PRIMARY KEY (id) )");						//tells our table that the primary key is my the ID
 
 	if($query) {
 		echo "Succesfully created table: posts";
 	}
+	
 
 	$connection->close();
