@@ -10,6 +10,6 @@
 		<textarea name="post"></textarea> <!-- creates a text area -->
 	</div>
 	<div>
-		<button type="submit">Submit</button> <!-- basically refreshes page for now -->
+		<button type="submit">Submit</button> <!-- basically refreshes page for now.. -->
 	</div>
 </form>
