@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php");	//creates connection to the server
+	require_once(__DIR__ . "/../model/config.php");	//creates connection to the server
 
 	$connection = new mysqli($host, $username, $password);	//the object we use to connect to the server
 

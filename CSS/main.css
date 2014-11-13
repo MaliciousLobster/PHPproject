@@ -2,7 +2,7 @@ body{
 	background-color: lime;
 	font-family: 'Tauri', sans-serif;
 	font-size: 20px;
-	
+	margin: 10px 10px 10px 10px;
 }
 
 @media screen and (max-width: 1024px){ /*media query for iphone*/
@@ -13,6 +13,7 @@ body{
 @media screen and (max-width: 320px){
 	body{
 		background-color: blue;
+		text-align: center;
 	}
 }
 
