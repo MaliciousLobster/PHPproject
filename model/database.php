@@ -13,7 +13,7 @@
 			$this->database = $database;
 
 		}
-		public function openConnection() {
+		public function openConnection() { //a function is a special block of code that can be used to run operations whenever you want.
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
 
 			if($this->connection->connect_error){			//accessing a property called 'connect_error', checking for a connection error
@@ -27,6 +27,12 @@
 
 		}
 		public function query($string) {
+			$this->openConnection(); //opens the connection
 
+			$query = $this->connection->query($string); //allows us to create a query and store it in $query
+
+			$this->closeConnection(); //closes connection
+
+			return $query;
 		}
 	}
