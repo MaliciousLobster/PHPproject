@@ -1,7 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //takes code form config.php
 
-	$connection = new mysqli($host, $username, $password, $database); //creates a connection to the database
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.
@@ -15,5 +14,4 @@
 		echo "<p>$connection->error</p>";
 	}
 
-	$connection->close(); //closes the connection
 
