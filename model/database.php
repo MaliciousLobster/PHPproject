@@ -5,6 +5,7 @@
 		private $username;
 		private $password;
 		private $database;
+		public $error;
 
 		public function __construct($host, $username, $password, $database) { //these are local variables, their info goes away after it's used, this function
 			$this->host = $host;											 // makes them not go disappear. allows them to be global.
@@ -49,6 +50,11 @@
 			$this->openConnection(); //opens the connection
 
 			$query = $this->connection->query($string); //allows us to create a query and store it in $query
+
+			//if there was an error in $query, it's stored in the public $error variable.
+			if(!$query) {
+				$this->error = $this->connection->error; 
+			}
 
 			$this->closeConnection(); //closes connection
 
