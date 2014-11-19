@@ -12,6 +12,25 @@
 			$this->password = $password;
 			$this->database = $database;
 
+			$this->connection = new mysqli($host, $username, $password);	//the object we use to connect to the server
+
+			if($this->connection->connect_error){			//accessing a property called 'connect_error', checking for a connection error
+				die("error:" . $this->connection->connect_error);		//if there's an error it will kill the program & tell the user what the error was
+			}
+	
+			$exists = $this->connection->select_db($database); //select_db tries to connect to the MYSQL server
+
+			if(!$exists) {			//checks to see if the database does not exist
+				$query = $this->connection->query("CREATE DATABASE $database");		//if the databse does not exist it will issue a query
+																		//creating a databases
+				if($query) {
+					echo "successfully created database " . $database;
+				}
+
+			}
+			else {
+				echo "Database has already been created.";	//if the database was created already it echos this out.
+			}
 		}
 		public function openConnection() { //a function is a special block of code that can be used to run operations whenever you want.
 			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database);
