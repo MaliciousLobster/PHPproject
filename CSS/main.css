@@ -3,18 +3,20 @@ body{
 	font-family: 'Tauri', sans-serif;
 	font-size: 20px;
 	margin: 10px 10px 10px 10px;
-	background-image: url("escheresque.png");
+	background-image: url("Images/escheresque.png");
 }
 
 @media screen and (max-width: 1024px){ /*media query for iphone*/
 	body{
-		background-color: red;
+		text-align: center;
+		font-size: 25px;
 	}
 }
 @media screen and (max-width: 320px){
 	body{
-		background-color: blue;
 		text-align: center;
+		font-size: 13px;
 	}
 }
+
 

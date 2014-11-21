@@ -8,6 +8,3 @@
 		<link href='http://fonts.googleapis.com/css?family=Tauri&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="box">
-
-		</div>

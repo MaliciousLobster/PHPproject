@@ -14,7 +14,7 @@
 	<div>
 		<label for "post">Post: </label> <!-- inputs text for 'Post' in the table -->
 		<br>
-		<textarea name="post"></textarea> <!-- creates a text area -->
+		<textarea class="text-box" name="post"></textarea> <!-- creates a text area -->
 	</div>
 	<div>
 		<button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"> Submit </button> <!-- submits the information on the page -->
