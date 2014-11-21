@@ -1,5 +1,6 @@
 <?php
-	require_once(__DIR__ . "/../model/config.php"); //takes code form config.php
+	require_once(__DIR__ . "/../model/config.php"); //takes code from config.php
+	require_once(__DIR__ . "/../view/header.php"); //takes code from header.php
 
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.

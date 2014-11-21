@@ -1,22 +1,48 @@
 body{
-	background-color: lime;
+	background-color:;
+
 	font-family: 'Tauri', sans-serif;
 	font-size: 20px;
 	margin: 10px 10px 10px 10px;
 	background-image: url("Images/escheresque.png");
 }
 
-@media screen and (max-width: 1024px){ /*media query for iphone*/
-	body{
-		text-align: center;
-		font-size: 25px;
-	}
-}
 @media screen and (max-width: 320px){
 	body{
 		text-align: center;
 		font-size: 13px;
 	}
+	.desc-box{
+		height: 400px;
+		width: 200px;
+	}
+	.title-box{
+		height: 100%;
+		width: 200px;
+	}
+}
+@media screen and (max-width: 1024px){ /*media query for ipad*/
+	body{
+		text-align: center;
+		font-size: 25px;
+	}
+	.desc-box{
+		height: 300px;
+		width: 350px;
+	}
+	.title-box{
+		height: 100%;
+		width: 350px;
+	}
+}
+
+.desc-box{
+	height: 300px;
+	width: 350px;
+}
+.title-box{
+	height: 100%;
+	width: 350px;
 }
 
 

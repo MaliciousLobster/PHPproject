@@ -51,7 +51,7 @@
 
 			$query = $this->connection->query($string); //allows us to create a query and store it in $query
 
-			//if there was an error in $query, it's stored in the public $error variable.
+			//if there was an error in $query, it's stored in the public $error variable.`
 			if(!$query) {
 				$this->error = $this->connection->error; 
 			}

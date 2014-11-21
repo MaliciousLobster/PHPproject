@@ -2,21 +2,21 @@
 	require_once(__DIR__ . "/../model/config.php");
 	require_once(__DIR__ . "/header.php");
 ?>
-
-<h1>Create Blog Post</h1>
-
+<div class="col-xs-12">
+	<h1>Create Blog Post</h1>
+</div>
 <form method="post" action="<?php echo $path ."controller/create-post.php"; ?>"> <!-- links post.php to form.php -->
-	<div>
+	<div class="col-xs-12">
 		<label for="title">Title: </label> <!-- inputs text for 'Title' in the table -->
 		<br>
-		<input type="text" name="title"/> <!-- makes the input a text type -->
+		<input class="title-box" type="text" name="title"/> <!-- makes the input a text type -->
 	</div>
-	<div>
+	<div class="col-xs-12">
 		<label for "post">Post: </label> <!-- inputs text for 'Post' in the table -->
 		<br>
-		<textarea class="text-box" name="post"></textarea> <!-- creates a text area -->
+		<textarea class="desc-box" name="post"></textarea> <!-- creates a text area -->
 	</div>
-	<div>
+	<div class="col-xs-12">
 		<button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off"> Submit </button> <!-- submits the information on the page -->
 	</div>
 </form>
