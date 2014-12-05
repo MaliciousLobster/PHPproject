@@ -6,6 +6,7 @@
 		. "id int(11) NOT NULL AUTO_INCREMENT,"        //and a title with up to 255 characters
 		. "title varchar(255) NOT NULL,"               //noneh of them can be null.
 		. "post text NOT NULL,"
+		. "DateTime datetime NOT NULL,"
 		. "PRIMARY KEY (id) )");						//tells our table that the primary key is my ID
 
 	if($query) {
