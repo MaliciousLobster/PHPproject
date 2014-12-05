@@ -14,3 +14,19 @@
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>"; //echos out that the table has already been created
 	}
+
+	//runs a query to create a table for users, none of the values can be null
+	$query = $_SESSION["connection"]->query("CREATE TABLE users (" //creates a table called post using the _SESSION variable connection to do a query
+		. "id int(11) NOT NULL AUTO_INCREMENT, "                   //creates an ID for the user
+		. "username varchar(30) NOT NULL, "						   //creates an email for user
+		. "email varchar(50) NOT NULL, "						   //creatses a username for user
+		. "password char(128) NOT NULL, "                          //creates a password for user
+		. "salt char(128) NOT NULL, "							   //protects against malware
+		. "PRIMARY KEY (id))");
+	
+	if($query) {
+		echo "<p> Successfully created table: users<p>";
+	}
+	else{
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	}

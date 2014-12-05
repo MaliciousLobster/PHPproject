@@ -9,7 +9,9 @@
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' "); //stores a value into posts
 
 	if($query) { //checks to see if the query was correctly run
-		echo "<p>Successfully inserted post: $title</p>";
+		echo "<p>$title</p>";
+		echo "<br>";
+		echo "<p>$post</p>";
 	} 
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>"; //accesses the session connection variable
