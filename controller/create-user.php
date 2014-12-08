@@ -5,4 +5,8 @@
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING); //filters input that is passed to the file, FILTER_SANITIZE_STRING makes the value display as a string
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING); //filters input that is passed to the file, FILTER_SANITIZE_STRING makes the value display as a string
 
-	echo $email . "-" . $username . "-" . $password;
+	echo $password;
+
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$"; //creating a salt variable, running a password encrypter 5000 times, then creating a unique id and making sure it is random
+
+	echo $salt;	
