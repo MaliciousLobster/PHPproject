@@ -25,9 +25,3 @@
 		. "salt char(128) NOT NULL, "							   //protects against malware
 		. "PRIMARY KEY (id))");
 	
-	if($query) {
-		echo "<p> Successfully created table: users<p>";
-	}
-	else{
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";
-	}

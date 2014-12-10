@@ -8,12 +8,4 @@
 		<link href='http://fonts.googleapis.com/css?family=Tauri&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<header class="sticky">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-xs-12">
-						<p>content!</p>
-					</div>	
-				</div>
-			</div>
-		</header>
+		
