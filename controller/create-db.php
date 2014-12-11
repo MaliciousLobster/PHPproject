@@ -1,5 +1,11 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php");	//creates connection to the server
+	require_once(__DIR__ . "/../controller/login-verify.php"); //takes code from login-verify.php
+
+	if(!authenticateUser()) { //if the user is not logged in it kills the program and redirects the user back to index.php
+		header("Location: " . $path . "index.php");
+		die();
+	}
 
 
 	$query = $_SESSION["connection"]->query("CREATE TABLE posts (" //creates a table called post with an id

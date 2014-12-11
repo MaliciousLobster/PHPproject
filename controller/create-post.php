@@ -1,6 +1,12 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //takes code from config.php
 	require_once(__DIR__ . "/../view/header.php"); //takes code from header.php
+	require_once(__DIR__ . "/../controller/login-verify.php"); //takes code from login-verify.php
+
+	if(!authenticateUser()) { //if the user is not logged in it kills the program and redirects the user back to index.php
+		header("Location: " . $path . "index.php");
+		die();
+	}
 
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.
