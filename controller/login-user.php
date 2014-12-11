@@ -8,9 +8,10 @@
 	$query = $_SESSION["connection"]->query("SELECT salt, password FROM users WHERE username = '$username'");
 
 	if($query->num_rows == 1){
-		$row = $query->fetch_array();
+		$row = $query->fetch_array(); //acquires data from the table users and stores it in $row
 
-		if($row["password"] === crypt($password, $row["salt"])){
+		if($row["password"] === crypt($password, $row["salt"])){ //checks the password if it was correct 
+			$_SESSION["authenticated"] = true; //creates a new session variable
 			echo "<p>Login was succcessful</p>";
 		}
 		else {

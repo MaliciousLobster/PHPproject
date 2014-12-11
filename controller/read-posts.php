@@ -2,7 +2,7 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //takes code from config.php
 
-	$query = "SELECT * FROM posts"; //sets query equal to all of the posts from the table
+	$query = "SELECT  title, post FROM posts"; //sets query equal to all of the posts from the table
 	$result = $_SESSION["connection"]->query($query); 
 
 	if($result){ //if $result has information it will display it

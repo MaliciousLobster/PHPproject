@@ -1,6 +1,8 @@
 <?php
 	require_once(__DIR__ . "/Database.php");	
 	session_start(); //creates info to be used throughout the files, once
+	session_regenerate_id(true); //when a session is started, the session gets an id that stays with it the entire life of the session. 
+	                             //when this file is called upon it regenerates the id. Helps prevent against hackers.
 
 	$path = "/PHPproject/"; //stores direct path to the project
 	

@@ -1,7 +1,7 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //uses code from config.php
 ?>
-<div class="container">
+<div class="sticky container">
 	<div class="row">
 		<div class="col-xs-12">
 			<nav>
