@@ -1,13 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //takes code from config.php
 	require_once(__DIR__ . "/../view/header.php"); //takes code from header.php
-	require_once(__DIR__ . "/../controller/login-verify.php"); //takes code from login-verify.php
-
-	if(!authenticateUser()) { //if the user is not logged in it kills the program and redirects the user back to index.php
-		header("Location: " . $path . "index.php");
-		die();
-	}
-
 
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING); //filters input recieved from a post that is being submitted to the file. Makes sure that it's a string.
@@ -17,11 +10,8 @@
 
 	$query = $_SESSION["connection"]->query("INSERT INTO posts SET title = '$title', post = '$post' "); //stores a value into posts
 
-	if($query) { //checks to see if the query was correctly run
-		echo "<p>$title</p>";
-		echo "Date Posted:" . $date->format("M/D/Y") . "," . $time->format("g:i");
-		echo "<br>";
-		echo "<p>$post</p>";
+	if($query) { //checks to see if the query was correctly run, displays this info
+		header("Location: " . $path . "index.php"); //directs the user back to index.php
 	} 
 	else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>"; //accesses the session connection variable

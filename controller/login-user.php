@@ -12,7 +12,7 @@
 
 		if($row["password"] === crypt($password, $row["salt"])){ //checks the password if it was correct 
 			$_SESSION["authenticated"] = true; //creates a new session variable
-			echo "<p>Login was succcessful</p>";
+			header("Location: " . $path . "index.php"); //directs the user back to index.php
 		}
 		else {
 			echo "<p>Invalid username and password</p>";

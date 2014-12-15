@@ -4,7 +4,7 @@
 
 	//checks to see if the user is logged in
 	function authenticateUser() {
-		if(!isset($_SESSION["authenticated"])) { //checks to see if a value is stored in the _SESSIONx variable authenticated
+		if(!isset($_SESSION["authenticated"])) { //checks to see if a value is stored in the _SESSION variable authenticated, if there isn't it returns false
 			return false;
 		}
 		else {

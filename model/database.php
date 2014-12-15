@@ -30,7 +30,7 @@
 
 			}
 			else {
-				echo "Database has already been created.";	//if the database was created already it echos this out.
+				
 			}
 		}
 		public function openConnection() { //a function is a special block of code that can be used to run operations whenever you want.
