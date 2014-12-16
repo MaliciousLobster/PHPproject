@@ -1,4 +1,5 @@
-$('article').readmore({
+$('.read-post').readmore({
   speed: 75,
-  maxHeight: 500
+  maxHeight: 100
 });
+

@@ -21,10 +21,10 @@
 
 ?>
 
-	</div>
-	<div class="row">
+	<!-- </div>
+	<div class="row"> -->
 		<div id="about" class="col-xs-3">
-			haha
+			hello
 		</div>
 	</div>
 </div>
