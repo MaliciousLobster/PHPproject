@@ -135,7 +135,7 @@ nav ul li a:hover {
 
 }
 #about{
-	position: fixed;
+	position: absolute;
 	height: 560px;
 	margin-top: 20px;
 	margin-left: 830px;
