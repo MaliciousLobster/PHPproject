@@ -136,8 +136,10 @@ nav ul li a:hover {
 
 }
 #about{
-	background-color: ;
+	background-color: lime ;
 	height: 100px;
+	margin-left: 830px;
+	position: fixed;
 }
 
 
