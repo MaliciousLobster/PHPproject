@@ -148,5 +148,17 @@ nav ul li a:hover {
             box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 
 }
-
+.circle{
+	width: 120px;
+  	height: 120px;
+  	border-radius: 150px;
+  	-webkit-border-radius: 150px;
+  	-moz-border-radius: 150px;
+  }
+#line{
+	height:1px;
+	background:#717171;
+	border-bottom:1px solid #313030;
+	margin-top: 5px;
+}
 

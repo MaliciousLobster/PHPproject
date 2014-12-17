@@ -25,6 +25,8 @@
 	<div class="row"> -->
 		<div id="about" class="col-xs-3">
 			<h1>My Blog<h1>
+			<img src="CSS/Images/Me.jpg" alt="Me" class="circle">
+			<p id="line"></p>
 		</div>
 	</div>
 </div>
