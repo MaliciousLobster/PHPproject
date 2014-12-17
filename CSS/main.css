@@ -138,8 +138,9 @@ nav ul li a:hover {
 #about{
 	background-color: lime ;
 	height: 100px;
+	margin-top: 20px;
 	margin-left: 830px;
-	position: fixed;
+	position: absolute;
 }
 
 
