@@ -24,7 +24,7 @@
 	<!-- </div>
 	<div class="row"> -->
 		<div id="about" class="col-xs-3">
-			hello
+			<h1>My Blog<h1>
 		</div>
 	</div>
 </div>
