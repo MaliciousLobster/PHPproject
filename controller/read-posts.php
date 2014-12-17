@@ -24,9 +24,11 @@
 	<!-- </div>
 	<div class="row"> -->
 		<div id="about" class="col-xs-3">
-			<h1>My Blog<h1>
+			<h1>My Blog</h1>
 			<img src="CSS/Images/Me.jpg" alt="Me" class="circle">
 			<p id="line"></p>
+			<p>This is a project for my 4th period APP Academy class. This project was interesting and it was fun
+			tweaking and messing with everything while I made it.</p>
 		</div>
 	</div>
 </div>
