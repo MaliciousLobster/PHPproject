@@ -28,7 +28,8 @@
 			<img src="CSS/Images/Me.jpg" alt="Me" class="circle">
 			<p id="line"></p>
 			<p id="aboutp">This is a project for my 4th period APP Academy class. This project was interesting and it was fun
-			tweaking and messing with everything while I made it. </p>
+			tweaking and messing with everything while I made it. I don't anything else to say so this is just filler!</p>
+			<p id="line"></p>
 		</div>
 	</div>
 </div>
