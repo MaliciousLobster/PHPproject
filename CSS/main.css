@@ -134,6 +134,17 @@ nav ul li a:hover {
 	padding-top: 60px;
 
 }
+#register-form{
+	background-color:  #FFFAFA;
+	padding: 10px 10px 10px 10px;
+	margin-top: 20px;
+	
+	
+	/*shadow*/
+	-webkit-box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 1px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
 #about{
 	position: absolute;
 	height: 560px;

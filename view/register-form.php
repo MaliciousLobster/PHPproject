@@ -3,7 +3,7 @@
 	require_once(__DIR__ . "/header.php");
 ?>
 
-<div class="container">
+<div id="register-form" class="container">
 	<div class="row">
 		<div class="col-xs-12">
 			<h1>Register</h1>
